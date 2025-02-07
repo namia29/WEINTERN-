@@ -1,0 +1,137 @@
+/* .app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.weather-info {
+  margin-top: 20px;
+  padding: 10px;
+  background: lightblue;
+  border-radius: 8px;
+} */
+
+
+
+/* Global styles */
+.app { 
+  text-align: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #89CFF0, #4A90E2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Weather Information Card */
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-info:hover {
+  transform: scale(1.05);
+}
+
+/* City Name */
+.city-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Temperature Display */
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Description */
+.weather-description {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.city-input {
+  padding: 12px;
+  font-size: 1.2rem;
+  width: 280px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.city-input::placeholder {
+  color: #eee;
+}
+
+.city-input:focus {
+  transform: scale(1.05);
+  border-color: #ffeb3b;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Bigger and Stylish Button */
+.fetch-button {
+  padding: 15px 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffeb3b;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.fetch-button:hover {
+  background: #fdd835;
+  transform: scale(1.1);
+}
+
+.fetch-button:active {
+  background: #fbc02d;
+  transform: scale(1);
+}
+
+
+/* Subtle Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
